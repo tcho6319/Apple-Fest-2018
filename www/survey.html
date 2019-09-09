@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Apple Harvest Festival: Survey</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="styles/all.css"/>
+
+  <script src="scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="scripts/validation.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <!-- <img src="images/applebanner.jpg"  class="bannerimg" alt="Apple Banner"> -->
+        <!-- Image from redstallion. URL: http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/51/r4/p051r48d.jpg -->
+        <h1>Apple Harvest Festival</h1>
+        <div class = "dates">September 28, 2018 - September 30, 2018</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="crafts.html">Crafts</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="survey.html">Survey</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="survey-middle">
+      <main>
+        <div class="surveyblurb">
+          <h2>Survey</h2>
+          <p>Did you have fun at AppleFest? We would like to provide the most up-to-date information on the food vendors and craft vendors that Cornell students love. Please fill out this survey and share your favorite vendors and wait times for future Cornellian AppleFest-newcomers!</p>
+        </div>
+<hr />
+      <form id="survey" method="post" action="confirmation.html" novalidate>
+      <!-- <form id="survey" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2018fa/submit.php" novalidate> -->
+        <p id="form-message" class="hidden"><strong>The form was not submitted successfully.</strong></p>
+        <div>
+          <label for="daysAttended">What day(s) did you go? </label>
+            <select multiple id="daysAttended" name="daysAttended[]" required>
+              <option value="friday">Friday, September 28, 2018</option>
+              <option value="saturday">Saturday, September 29, 2018</option>
+              <option value="sunday">Sunday, September 30, 2018</option>
+            </select>
+          <p id ="day-message" class="hidden"><strong>Required: Please select at least one day you attended.</strong></p>
+        </div>
+        <div>
+          <label for="timesAttended">When did you go? </label>
+            <select multiple id="timesAttended" name="timesAttended[]" required>
+              <option value="tenToelev">10am to 11am</option>
+              <option value="elevTotwelv">11am to 12pm</option>
+              <option value="twelvToone">12pm to 1pm</option>
+              <option value="oneTotwo">1pm to 2pm</option>
+              <option value="twoTothree">2pm to 3pm</option>
+              <option value="threeTofour">3pm to 4pm</option>
+              <option value="fourTofive">4pm to 5pm</option>
+              <option value="fiveTosix">5pm to 6pm</option>
+            </select>
+          <p id="time-message" class="hidden"><strong>Required: Please select at least one time you attended.</strong></p>
+        </div>
+        <div>
+          <label for="faveFood">What was your favorite food vendor? </label>
+          <input type ="text" id="faveFood" name="faveFood" placeholder="Enter Valid Food Vendor"/>
+        </div>
+        <div>
+          <label for="foodTime">How was the wait time for food? </label>
+          <select id="foodTime" name="foodTime">
+            <option value="fast">Fast (5 - 10 min)</option>
+            <option value="mod">Moderate (10 - 15 min)</option>
+            <option value="long">Long (15 - 20 min)</option>
+            <option value="vlong">Very Long (20+ min)</option>
+          </select>
+        </div>
+        <div>
+          <label for="faveCraft">What was your favorite craft vendor? </label>
+          <input type="text" id="faveCraft" name="faveCraft" placeholder="Enter Valid Craft Vendor"/>
+        </div>
+        <div>
+          <label for="craftTime">How was the wait time for crafts? </label>
+          <select id="craftTime" name="craftTime">
+            <option value="fast">Fast (5 - 10 min)</option>
+            <option value="mod">Moderate (10 - 15 min)</option>
+            <option value="long">Long (15 - 20 min)</option>
+            <option value="vlong">Very Long (20+ min)</option>
+          </select>
+        </div>
+        <div>
+          <label for="addComm">Any additional comments? </label>
+          <textarea id="addComm" name="addComm"></textarea>
+        </div>
+        <button type="submit" class="submit">Submit</button>
+      </form>
+      </main>
+    </div>
+
+    <footer>
+      <div class="returntotop">
+        <a href="survey.html">Return to Top</a>
+      </div>
+
+      <div class="contact">
+        <p>Contact Us: The Downtown Ithaca Alliance</p>
+        <p>Banner image above is from redstallion, <a href="http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/51/r4/p051r48d.jpg">URL</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
