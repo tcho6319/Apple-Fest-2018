@@ -6,4 +6,6 @@ The site was developed for Cornell students in the INFO 1300: Intro to Web Desig
 
 Features include responsive design, nav bar, and survey form. 
 
+Visit the site here: https://obscure-journey-87756.herokuapp.com/
+
 
